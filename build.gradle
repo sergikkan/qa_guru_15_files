@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.skan'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+            'org.junit.jupiter:junit-jupiter:5.9.1',
+            'com.codeborne:selenide:6.9.0',
+            'com.fasterxml.jackson.core:jackson-core:2.13.4',
+            'org.assertj:assertj-core:3.23.1'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
