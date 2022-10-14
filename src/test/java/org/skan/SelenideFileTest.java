@@ -1,5 +1,6 @@
 package org.skan;
 
+import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -27,6 +28,9 @@ public class SelenideFileTest {
 
     @Test
     void uploadFile() throws Exception{
-
+        open ("https://fineuploader.com/demos.html");
+        $("input[type='file']").uploadFromClasspath("qa.jpeg");
+        $("div.qq-file-info").shouldHave(Condition.text("qa.jpeg"));
+        System.out.println();
     }
 }
