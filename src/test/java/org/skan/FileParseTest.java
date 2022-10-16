@@ -46,7 +46,7 @@ public class FileParseTest {
             CSVReader csv = new CSVReader(new InputStreamReader(is));
             List<String[]> content =csv.readAll();
             String[] row = content.get(1);
-            assertThat(row[0]).isEqualTo("Tuchs");
+            assertThat(row[0]).isEqualTo("LastName");
         }
 
     }

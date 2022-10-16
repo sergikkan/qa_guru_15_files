@@ -1,0 +1,11 @@
+{
+  "PM": "Venera",
+  "Frontend": ["Denis","Alibek"],
+  "Backend": ["Alex","Marlen"],
+  "Mobile": "Ramir",
+  "QA": "Serhii",
+  "projects":{
+    "campain": "web",
+    "banking": "mobile"
+  }
+}
